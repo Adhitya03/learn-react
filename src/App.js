@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Person from './Person/Person'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className="container">
+       <h1> Learning React </h1>
+       <Person
+           name="Adhitya" age="29"
+       />
+       <Person
+           name="Rachman" age="12"
+       />
+       <Person
+           name="AR" age="56"
+       />
+       <Person
+           name="Sifat Sifat" age="23"
+       > Hi. I am a child </Person>
+   </div>
   );
 }
 
